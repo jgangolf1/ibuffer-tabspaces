@@ -1,0 +1,8 @@
+*
+!.gitignore
+!README.md
+!LICENSE
+!ibuffer-tabspaces.el
+!screenshots/
+!screenshots/ibuffer-tabspaces.png
+
