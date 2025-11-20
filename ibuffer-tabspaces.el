@@ -5,8 +5,8 @@
 ;; Author: Joseph Gangolf <jgangolf1@gmail.com>
 ;; Keywords: tools
 ;; URL: https://github.com/jgangolf1/ibuffer-tabspaces
-;; Package-Version: 0.1
-;; Package-Requires: ((emacs "27.1") (tabspaces "1.0"))
+;; Package-Version: 0.0.1
+;; Package-Requires: ((emacs "29.1") (tabspaces "1.3"))
 
 ;;; Commentary:
 
@@ -15,7 +15,7 @@
 ;;
 ;; Use:
 ;;
-;; To narrow ibuffer to a tab, or a list of tabs:
+;; To narrow ibuffer to the current tab:
 ;;
 ;;   M-x ibuffer-tabspaces-narrow-to-tab
 ;;
@@ -26,9 +26,10 @@
 ;; These can be made default through `ibuffer-hook':
 ;;
 ;;   (add-hook 'ibuffer-hook #'ibuffer-tabspaces-narrow-to-tab)
-;;   (add-hook 'ibuffer-hook #'ibuffer-tabspaces-group-by-tab)
+;;   (add-hook 'ibuffer-hook #'ibuffer-tabspaces-group-by-tabs)
 ;;
-;; To open a buffer and switch tabs, `ibuffer-tabspaces-switch-buffer-and-tab'.
+;; To open the selected buffer and switch tabs,
+;; `ibuffer-tabspaces-switch-buffer-and-tab'.
 ;;
 ;; This package additionally defines two columns which display the tab of a
 ;; buffer and the total number of tabs a buffer belongs to. The tab column only

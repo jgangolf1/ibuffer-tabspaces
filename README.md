@@ -30,7 +30,7 @@ These can be made default by hooking to `ibuffer-hook`:
 
 ``` elisp
   (add-hook 'ibuffer-hook #'ibuffer-tabspaces-narrow-to-tab)
-  (add-hook 'ibuffer-hook #'ibuffer-tabspaces-group-by-tab)
+  (add-hook 'ibuffer-hook #'ibuffer-tabspaces-group-by-tabs)
 ```
   
 To open a buffer and switch tabs, `ibuffer-tabspaces-switch-buffer-and-tab`.
@@ -49,7 +49,7 @@ Using elpaca:
 (use-package ibuffer-tabspaces
   :ensure (ibuffer-tabspaces :host github :repo "jgangolf1/ibuffer-tabspaces")
   :after (ibuffer tabspaces)
-  ;; :hook (ibuffer . ibuffer-tabspaces-narrow-to-tab) ; narrow to curren tab
+  ;; :hook (ibuffer . ibuffer-tabspaces-narrow-to-tab) ; narrow to current tab
   ;; :hook (ibuffer . ibuffer-tabspaces-group-by-tabs) ; group buffers by tabs
   :bind (:map ibuffer-mode-map
               ("C-<return>" . ibuffer-tabspaces-visit-buffer-switch-tab)))
